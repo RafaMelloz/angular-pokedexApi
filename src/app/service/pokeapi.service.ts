@@ -10,7 +10,7 @@ import { Observable, map, tap } from 'rxjs';
 })
 export class PokeapiService {
   public numMin:number = 0;
-  public numMax: number = 60;
+  public numMax: number = 70;
  
   public url: string = `https://pokeapi.co/api/v2/pokemon?offset=${this.numMin}&limit=${this.numMax}`
 
