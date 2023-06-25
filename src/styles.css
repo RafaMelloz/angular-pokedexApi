@@ -1,0 +1,51 @@
+@import './css-config/variaveis.css';
+@import 'css-config/animations.css';
+@import 'css-config/loader.css';
+
+::-webkit-scrollbar{
+    background-color: black;
+    width: 8px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(73, 73, 73);
+    border-radius: 10px;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--primaryColor);
+    height: 100%;
+}
+
+
+
+main{
+    width: 45%;
+    margin: 0 auto;
+}
+
+.btn{
+    margin-top: 80px;
+    color: white;
+    font-size: 20px;
+    padding: 12px;
+    width: 100%;
+    display: block;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+@media screen and (max-width:768px) {
+    main{
+        width: 80%;
+    } 
+}

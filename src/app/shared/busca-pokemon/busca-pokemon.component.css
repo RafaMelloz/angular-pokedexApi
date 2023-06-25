@@ -1,0 +1,59 @@
+section{
+    margin-bottom: 12px;
+    min-width: 100%;
+}
+.group-input{
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    background-color: #404040;
+    border-radius: 15px;
+    height: 2.8rem;
+}
+.buscaPokemon{
+    width: 90%;
+    height: 2.8rem;
+    border: none;
+    padding: 1rem;
+    background-color: transparent;
+    position: absolute;
+    color: var(--branco);
+    font-size: 1.0rem;
+}
+.search{
+    position: absolute;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    right: 1.2rem;
+}
+
+.search svg{
+    transition: 0.2s ease-in;
+}
+.buscaPokemon:focus{
+    outline: none;
+}
+
+/* .buscaPokemon:focus section label {
+    border: 1px solid #ef4036;
+    background-color: transparent;
+}
+*/
+.buscaPokemon:hover~.search svg path {
+    transition: 0.2s ease-in ;
+    fill: #ef3f36a4;
+    width: 20px;
+    height: 20px;
+} 
+
+.buscaPokemon:hover~.search svg {
+    width: 20px;
+    height: 20px;
+}
+
+::placeholder{    
+    color:var(--branco);
+    opacity: 0.8;
+}
